@@ -1,0 +1,26 @@
+
+
+
+<div class="sidebar">
+  <ul>
+    <li>
+      <%= link_to root_path do %>
+        <i class="fas fa-tachometer-alt"></i><span>Dashboard</span>
+      <% end %>
+
+    </li>
+    <li>
+      <%= link_to categories_path do %>
+        <i class="fas fa-users"></i><span>Categorias</span>
+      <% end %>
+    </li>
+
+    <li>
+      <%= link_to transactions_path do %>
+        <i class="fas fa-money-check-alt"></i><span>Transacoes</span>
+      <% end %>
+    </li>
+    <%= render 'layouts/nav_links_for_auth' %>
+    <%= render 'layouts/navigation_links' %>
+  </ul>
+</div>

@@ -29,7 +29,7 @@ gem 'devise'
 gem 'high_voltage'
 gem 'jquery-rails'
 gem 'pg'
-gem 'therubyracer', :platform=>:ruby
+gem 'mini_racer'
 group :development do
   gem 'better_errors'
   gem 'guard-bundler'
@@ -53,3 +53,12 @@ group :test do
   gem 'database_cleaner'
   gem 'launchy'
 end
+
+gem "image_processing"
+gem 'ransack', github: 'activerecord-hackery/ransack'
+gem 'kaminari'
+gem 'ancestry'
+gem 'mini_magick'
+gem 'friendly_id'
+gem "bootstrap_form", ">= 4.0.0.alpha1"
+gem 'binding_of_caller'

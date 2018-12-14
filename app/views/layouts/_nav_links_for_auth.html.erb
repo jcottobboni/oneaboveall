@@ -1,12 +1,25 @@
 <% if user_signed_in? %>
-  <li class='nav-item'><%= link_to 'Edit account', edit_user_registration_path, class: 'nav-link' %></li>
-  <li class='nav-item'><%= link_to 'Sign out', destroy_user_session_path, :method=>'delete', class: 'nav-link' %></li>
+  <li class='nav-item'><%= link_to edit_user_registration_path do %>
+      <i class="fas fa-user-edit"></i><span>Editar usuario</span>
+    <% end %>
+  </li>
+  <li class='nav-item'><%= link_to destroy_user_session_path, :method => 'delete' do %>
+      <i class="fas fa-sign-out-alt"></i><span>Logout</span>
+    <% end %></li>
 <% else %>
-  <li class='nav-item'><%= link_to 'Sign in', new_user_session_path, class: 'nav-link' %></li>
-  <li class='nav-item'><%= link_to 'Sign up', new_user_registration_path, class: 'nav-link' %></li>
+  <li class='nav-item'><%= link_to  new_user_session_path do %>
+      <i class="fas fa-sign-in-alt"></i></i><span>Login</span>
+    <% end %>
+  </li>
+  <li class='nav-item'><%= link_to  new_user_registration_path do %>
+      <i class="fas fa-user-plus"></i></i><span>Registrar</span>
+    <% end %>
+  </li>
 <% end %>
 <% if user_signed_in? %>
   <% if current_user.try(:admin?) %>
-    <li class='nav-item'><%= link_to 'Users', users_path, class: 'nav-link' %></li>
+    <li class='nav-item'><%= link_to 'Users', users_path do %>
+      <% end %>
+    </li>
   <% end %>
 <% end %>

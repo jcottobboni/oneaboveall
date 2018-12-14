@@ -1,0 +1,7 @@
+pt-BR:
+  activerecord:
+    enums:
+      transaction:
+        transaction_type:
+          income:   "Receita"
+          expense:  "Despesa"
