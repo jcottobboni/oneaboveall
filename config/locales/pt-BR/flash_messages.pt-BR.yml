@@ -1,0 +1,8 @@
+---
+pt-BR:
+  flash_messages:
+    successfully_created: ' Criado com Sucesso'
+    successfully_updated: ' Atualizado com Sucesso'
+    successfully_destroyed: ' Deletado com Sucesso'
+    multiple_destroy: ' Deletados com Sucesso'
+

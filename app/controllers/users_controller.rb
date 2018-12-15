@@ -1,4 +1,4 @@
-class UsersController < ApplicationController
+class UsersController < AuthenticatedController
   before_action :authenticate_user!
   before_action :admin_only, :except => :show
 

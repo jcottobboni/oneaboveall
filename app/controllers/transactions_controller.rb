@@ -1,4 +1,4 @@
-class TransactionsController < ApplicationController
+class TransactionsController < AuthenticatedController
   before_action :set_transaction, only: [:show, :edit, :update, :destroy]
   before_action :set_select, only: [:new, :create, :edit, :update]
 

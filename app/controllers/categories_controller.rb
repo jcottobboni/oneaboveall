@@ -1,4 +1,4 @@
-class CategoriesController < ApplicationController
+class CategoriesController < AuthenticatedController
   before_action :set_category, only: [:show, :edit, :update, :destroy]
   before_action :set_select, only: [:new, :create,:edit, :update]
 

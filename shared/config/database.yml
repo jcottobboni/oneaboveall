@@ -1,0 +1,19 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  pool: 5
+  database: industria_prod
+  username: jcottobboni
+  password: abissal
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  pool: 5
+  database: industria_prod
+  username: jcottobboni
+  password: abissal
+
+
